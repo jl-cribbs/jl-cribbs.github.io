@@ -1,0 +1,300 @@
+<!-- Original source courtesy of Alison Danes -->
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+	<title>AVS Letter</title>
+
+	<link rel="stylesheet" href="./letter.css">
+<style>
+* {
+	font-family:	Gill Sans,Gill Sans MT,Calibri,sans-serif;
+	font-size:		12pt;
+	}
+INPUT {
+	border:			0px;
+	background-color:	#eef;
+
+	}
+TEXTAREA {
+	border:			0px;
+	height:			auto;
+	overflow:		visible;
+	width:			100%;
+	background-color:	#eef;
+	}
+P {
+	margin-bottom:	1.0em;
+	}
+TABLE, TH, TD {
+	margin:			0px;
+	padding:		0px;
+	padding-bottom: 	0.25em;
+	border:			0px;
+	border-spacing:	0px;
+	}
+
+
+IMG.inline {
+	display:		inline-block;
+	line-height:	12pt;
+	vertical-align:	bottom;
+	}
+.avoidbreak {
+	page-break-inside:	avoid;
+	}
+</style>
+
+<script type="text/javascript">
+function reveal(c,n) {
+	var e = document.getElementById(n.value);
+	e.style.display = "block";
+	var c = document.getElementById(c);
+	c.style.display = "none";
+}
+</script>
+
+</head>
+<body>
+
+<div style="width:827px;height:1169px">
+
+<!--Bottom JL logo design-->
+<img style="overflow:hidden;position:absolute;bottom:0px;right:0px;width:15%" src="bottomlogo.png">
+
+<!--JL CC Address-->
+<table style="margin-bottom:1em">
+	<tr>
+		<td style="width:413px;vertical-align:top"><img src="cropped.jpg"></td>
+		<td style="width:206px">&nbsp;</td>
+		<td style="width:406px;line-height:1.0em;padding-top:2.5em;text-align: right;">
+			<p style="" id="s14o14">John Lewis & Partners<br>The Mall, Cribbs Causeway<br>BS34 5QU<br>0117 9591100</p>
+		</div>
+		</td>
+	</tr>
+</table>
+
+<!--Refernece & Customer Name Box-->
+<p><strong>Reference </strong><input></p>
+<p>Dear <input></p>
+
+<p id="s1"><select onChange="reveal('s1',this)">
+	<option selected>[-- Select type of set up --]</option>
+	<option value="s1o1">PC Set Up</option>
+	<option value="s1o5">Mac Set Up</option>
+	<option value="s1o3">iPad Set Up</option>
+	<option value="s1o4">Android (including FireOS) Set Up</option>
+	<option value="s1o6">Google Chromebook Set Up</option>
+	<option value="s1o7">iPhone Set Up</option>
+	<option value="s1o8">Health Check & Fix</option>
+	<option value="s1o9">Data Backup</option>
+
+</select></p>
+<p style="display:none" id="s1o1">Thank you for choosing to have your new computer set up by John Lewis & Partners. Our PC set up service has been completed successfully and we have installed any Windows or system updates available on this date to make your computer more stable and secure.</p>
+
+<p style="display:none" id="s1o3">Thank you for choosing to have your new iPad set up by John Lewis & Partners. Our set up service has been completed successfully and the latest updates to the operating system and default apps have been installed.</p>
+
+<p style="display:none" id="s1o4">Thank you for choosing to have your new Android device set up by John Lewis & Partners. Our set up service has been completed successfully and the latest updates to the operating system and its default apps have been installed.</p>
+
+<p style="display:none" id="s1o5">Thank you for choosing to have your new Apple Mac computer set up by John Lewis & Partners. Our set up service has been completed successfully and the latest updates to the operating system and its default programs have been installed.</p>
+
+<p style="display:none" id="s1o6">Thank you for choosing to have your new Google Chromebook set up by John Lewis & Partners. Our set up service has been completed successfully and the latest updates to the Chrome operating system and its default apps have been installed.</p>
+
+<p style="display:none" id="s1o7">Thank you for choosing to have your new iPhone set up by John Lewis & Partners. Our set up service has been completed successfully and the latest updates to the operating system and its default apps have been installed.</p>
+
+<p style="display:none" id="s1o8">Thank you for choosing to have a health check and fix by John Lewis & Partners. We have scanned for and removed any wanted programs such as adware, malware or viruses. We have also ensured that your system has been updated with the latest software versions.</p>
+
+<p style="display:none" id="s1o9">Thank you for choosing to have your data backed up by John Lewis & Partners. We have backed your information up to your supplied memory device.<table><tr><td>Folder Name: <input maxlength="30" size="30" title="The folder where the backup is"></td></tr></table></p>
+
+<!--select device-->
+<p id="s3"><select onChange="reveal('s3',this)">
+	<option selected>[-- Select device --]</option>
+	<option value="s3o1">Windows local account log in details</option>
+	<option value="s3o6">Apple Computer</option>
+	<option value="s3o9">Apple with Local Login</option>
+
+	<option value="s3o2">Apple tablet or phone</option>
+	<option value="s3o3">Android Tablet or phone</option>
+	<option value="s3o8">Google Chromebook</option>
+	<option value="s3o4">Amazon Tablet</option>
+	<option value="s3o7">--None of the above-- i.e log in is MS account</option>
+</select></p>
+
+<p style="display:none" id="s3o1"><table><tr><td colspan="4">You have chosen to login with a user name, rather than a Microsoft account. Your chosen name and optional password or pin are below.</tr><tr><td>Login name: <input maxlength="25"  size="25" title="The user name of the customer"></td><td>Password / pin: <input maxlength="20" size="20" title="If none, type BLANK"></td></tr></table></p>
+
+<p style="display:none" id="s3o2">To begin downloading apps, select the App store and begin browsing. To download an app that costs money you will be asked (one time only) to enter credit card information. For help using your new iPad, a manual can be downloaded for free using iBooks. Alternatively an online manual can be viewed in the Safari browser and found under "Favourites".</p>
+
+<p style="display:none" id="s3o3">To begin downloading apps on your Android device, select the Play Store and begin browsing. To download an app that costs money you will be asked (one time only) to enter credit card information.</p>
+
+<p style="display:none" id="s3o4">To begin downloading apps and books on your Amazon tablet you will be asked (one time only) to enter credit card information and to confirm your address with Amazon.</p>
+
+<p style="display:none" id="s3o6">To begin downloading apps and books from the iTunes store you will be asked to enter credit card information. You may not be able to download anything until you do this. There may also be updates for certain programs that we were unable to do because they require this credit card information.<table><tr><td>Apple ID: <input maxlength="25" size="25" title="The user name of the customer"></td><td>Password: <input maxlength="25"  size="25" title="If none, type BLANK"></td></tr></table></p>
+
+<p style="display:none" id="s3o9">To begin downloading apps and books from the iTunes store you will be asked to enter credit card information. You may not be able to download anything until you do this. There may also be updates for certain programs that we were unable to do because they require this credit card information.<table><tr><td>Apple ID: <input maxlength="25" size="25" title="The user name of the customer"></td><td>Password: <input maxlength="25"  size="25" title="If none, type BLANK"></td></tr></table><table><tr><td>Login: <input maxlength="25" size="25" title="The user name of the customer"></td><td>Password: <input maxlength="25"  size="25" title="If none, type BLANK"></td></tr></table></p>
+
+
+<p style="display:none" id="s3o8">To begin downloading apps onto your Chromebook, select the Chrome store and begin browsing.</p>
+
+<div style="display:none" id="s3o7"></div>
+
+
+
+<p id="s4"><select onChange="reveal('s4',this)">
+	<option selected>[-- Select type of account --]</option>
+	<option value="s4o1">Microsoft Account information</option>
+	<option value="s4o2">Google Account information</option>
+	<option value="s4o8">Apple Account iPad / iPhone information</option>
+	<option value="s4o4">Amazon Account information</option>
+	<option value="s4o6">--None of the above // Mac Users--</option>
+</select></p>
+
+<p style="display:none" id="s4o1"><table><tr><td colspan="4">A Microsoft account is used for accessing applications such as the Mail app, Windows store and cloud storage with Onedrive. It is also used to register Office software and synchronise settings between other Windows devices.</td></tr><tr><td>Account: <input maxlength="40"  size="40" title="Microsoft account email"></td><td>Password: <input  maxlength="20" size="20" title="Make sure you type this correctly using upper and lower case letters"></td></tr></table></p>
+
+<p style="display:none" id="s4o2"><table><tr><td colspan="4">A Google account is used for purchasing apps and content from the Google Play store as well as providing access to Gmail (Google Mail) and other Google based things such as Google Calendar and Google Drive.</td></tr><tr><td>Account: <input maxlength="40" size="40" title="Google account email address"></td><td>Password: <input maxlength="20"  size="20" title="Make sure you type this correctly using upper and lower case letters"></td></tr></table></p>
+
+<p style="display:none" id="s4o3"><table><tr><td colspan="4">An Apple account / ID is used for purchasing apps from the Apple App Store and content such as music, books and films from iTunes.</td></tr><tr><td>Account: <input maxlength="40"  size="40" title="Apple account email address"></td><td>Password: <input maxlength="20" size="20" title="Make sure you type this correctly using upper and lower case letters"></td></tr></table></p>
+
+<p style="display:none" id="s4o8"><table><tr><td colspan="4">An Apple account / ID is used for purchasing apps from the Apple App Store and content such as music, books and films from iTunes.</td></tr><tr><td>Apple account: <input maxlength="40"  size="40" title="Apple account email address"></td><td>Password: <input maxlength="20"  size="20" title="Make sure you type this correctly using upper and lower case letters"></td></tr><tr><td>Passcode (Optional): <input maxlength="10"  size="10"></td></tr></table></p>
+
+<p style="display:none" id="s4o4"><table><tr><td colspan="4">Your Amazon account is used for purchasing apps, books, movies and music directly from Amazon.</td></tr><tr><td>Account: <input maxlength="40"  size="40" title="Amazon account email address"></td><td>Password: <input maxlength="20" size="20" title="Make sure you type this correctly using upper and lower case letters"></td></tr></table></p>
+
+<div style="display:none" id="s4o6"></div>
+
+<p id="s11"><select onChange="reveal('s11',this)">
+	<option selected>[-- Data transfer? --]</option>
+	<option value="s11o1">Data transfer to folder on desktop</option>
+	<option value="s11o2">Data transfer to individual folders</option>
+	<option value="s11o3">Data transfer mostly to individual folders on new pc and remainder to desktop</option>
+	<option value="s11o4">- Not applicable -</option>
+</select></p>
+
+	<p style="display:none" id="s11o1">We have transferred any photos, videos, documents and music we could find from your old computer. There is now a folder on your desktop leading to these files.</p>
+	<p style="display:none" id="s11o2">We have transferred any photos, videos, documents and music we could find from your old computer. Where possible we have moved these files into their correct places - i.e. Photos into the Pictures folder.</p>
+	<p style="display:none" id="s11o3">We have transferred any photos, videos, documents and music we could find from your old computer. Where possible we have moved these files into their correct places - i.e. Photos into the Pictures folder but the remainder have been placed in a folder on your desktop.</p>
+
+	<div style="display:none" id="s11o4"></div>
+
+
+
+
+<p id="s12"><select onChange="reveal('s12',this)">
+	<option selected>[-- Extra details?--]</option>
+	<option value="s12o1">Type in extra details (Expand box in bottom right)</option>
+	<option value="s12o2">-None required-</option>
+
+</select></p>
+	<p style="display:none" id="s12o1"><textarea></textarea></p>
+	<div style="display:none" id="s12o2"></div>
+
+
+
+
+
+<p id="s6"><select onChange="reveal('s6',this)">
+	<option selected>[-- Select Office Install --]</option>
+	<option value="s6o1">Office Home and Student 2021 installed</option>
+	<option value="s6o6">Microsoft 365 (1 User) installed</option>
+	<option value="s6o2">Microsoft 365 (6 User) installed</option>
+	<option value="s6o3">Office Home and Business 2021 installed</option>
+	<option value="s6o5">-None- i.e. Tablet.</option>
+
+</select></p>
+
+<p style="display:none" id="s6o1"><table><tr><td colspan="2">Office Home and Student 2021 has been registered and installed, giving you access to Word, Excel, Powerpoint and Onenote. This is a single licence that cannot be transferred to another computer. If you need to reinstall it again on this computer you will need your Microsoft Account details to authorise it.</td></tr></table></p>
+
+<p style="display:none" id="s6o2"><table><tr><td colspan="2">Microsoft 365 has been registered and installed, granting you one year of access to the full Office suite; Word, Excel, Powerpoint, Onenote, Outlook, Publisher and Access. Office 365 can be installed on up to five computers. Simply go to www.office.com/setup, put in your serial key and sign in with your Microsoft account to install it on another pc.</td></tr></table></p>
+
+<p style="display:none" id="s6o3"><table><tr><td colspan="2">Office Home and Business 2021 has been registered and installed, giving you access to Word, Excel, Powerpoint, Onenote and Outlook. This is a single licence that cannot be transferred to another computer. If you need to reinstall it again on this computer you will need your Microsoft Account details to authorise it.</td></tr></table></p>
+
+<p style="display:none" id="s6o6"><table><tr><td colspan="4">Microsoft 365 Personal has been registered and installed, granting you one year of access to the full Office suite; Word, Excel, Powerpoint, Onenote, Outlook, Publisher and Access. Office 365 Personal can be installed on 1 PC & a tablet.</td></tr></table></p>
+
+<div style="display:none" id="s6o5"></div>
+
+
+<p id="s7"><select onChange="reveal('s7',this)">
+	<option selected>[-- Select Antivirus --]</option>
+	<option value="s7o2">Norton (full version)</option>
+	<option value="s7o3">McAfee trial</option>
+	<option value="s7o5">Windows Defender</option>
+	<option value="s7o6">-None- i.e. Tablet or Mac and not required</option>
+
+</select></p>
+
+<p style="display:none" id="s7o2"><table><tr><td colspan="4">We have installed and activated the full version of Norton's antivirus for you and created a Norton's account. It has been updated with the latest virus definitions. You have a one year subscription from this date.</td></tr><tr><td>Account: <input maxlength="40" size="40" title="Account email address"></td><td>Password: <input maxlength="30" title="Make sure you type this correctly using upper and lower case letters"></td></tr></table></p>
+
+
+<p style="display:none" id="s7o3">We have activated and installed the latest virus definitions for the trial version of McAfee antivirus. You will be prompted to subscribe when it nears the end of trial.</p>
+
+<div style="display:none" id="s7o5">We have activated and updated Windows Defender, the Microsoft supplied anti-virus.</div>
+
+<div style="display:none" id="s7o6"></div>
+
+<div class="avoidbreak">
+
+	<p id="s8"><select onChange="reveal('s8',this)">
+		<option selected>[-- Select device for wifi --]</option>
+		<option value="s8o2">Windows 11 wifi</option>
+		<option value="s8o3">iPad wifi</option>
+		<option value="s8o4">Google wifi</option>
+		<option value="s8o5">Amazon wifi</option>
+		<option value="s8o7">Apple Computer wifi</option>
+		<option value="s8o8">-None- i.e. device not listed above</option>
+
+
+	</select></p>
+	
+
+	<p style="display:none" id="s8o2">Select the Network, Sound, or Battery icons on the far right side of the taskbar to open quick settings. Next, click the right-pointing arrow in the top right box of the quick settings menu. This will bring up a list of wifi networks, select yours and enter the password and press connect. You should now be connected to the internet.</p>
+
+	<p style="display:none" id="s8o3">To get started and connected to your wifi, (<img width="20" src="apple_wifi.png">) tap "Settings" on the start screen. You can always return to the start screen by pressing the button at the bottom of the iPad's display. In the top left of "Settings" you will see "wifi". Select this and it will show all the nearby wireless networks. Make sure you know what your wifi is called and have your password handy. It is sometimes written on the bottom of your router. Select your wifi and enter your password. You should now be connected to the internet.</p>
+
+	<p style="display:none" id="s8o4">To get started and connected to your wifi, tap "Settings" on the start screen or the square in the top right that will show you all the apps on your device, including "Settings".  At the top of "Settings" you will see "wifi". Select this and it will show all the nearby wireless networks. Make sure you know what your wifi is called and have your password handy. It is sometimes written on the bottom of your router. Select your wifi and enter your password. You should now be connected to the internet and automatically connect whenever you are in the vicinity of your router.</p>
+
+	<p style="display:none" id="s8o5">To get started and connected to your wifi, swipe down from the top of the screen and tap "wifi" to show all the nearby wireless networks. Make sure you know what your wifi is called and have your password handy. It is sometimes written on the bottom of your router. Select your wifi and enter your password. You should now be connected to the internet and automatically connect whenever you are in the vicinity of your router.</p>
+
+	<p style="display:none" id="s8o7">To get started and connected to your wifi, click the wifi symbol (<img width="20" src="apple_wifi.png">) at the top right of the screen. Make sure you know what your wifi is called and have your password handy. It is sometimes written on the bottom of your router. Select your wifi and enter your password. You should now be connected to the internet and automatically connect whenever you are in the vicinity of your router.</p>
+
+
+
+</div>
+
+<p id="s5"><select onChange="reveal('s5',this)">
+	<option selected>[-- Select disclaimer --]</option>
+	<option value="s5o1">Password disclaimer</option>
+
+</select></p>
+
+<p style="display:none" id="s5o1">We do not retain any of your passwords or account information. All of this information has been returned to you on this letter and with the set up documentation. If you forget your password you can use the recovery options (either email, telephone or security question/s) set up at the time to reset it. For your own security and peace of mind we also suggest you change your passwords regularly and that you remember passwords are case sensitive when entering them in.</p>
+
+<div class="avoidbreak">
+	<div style="display:none" id="s8o8"></div>
+
+	<p id="s9"><select onChange="reveal('s9',this)">
+		<option selected>[-- Select Support line --]</option>
+		<option value="s9o1">Software Support Line Info (PCs / Macs only)</option>
+		<option value="s9o2">Apple Support App (iPad / iPhone)</option>
+		<option value="s9o3">-None- i.e. Not applicable to tablets</option>
+
+
+	</select></p>
+
+	<p style="display:none" id="s9o1">If you need any further assistance, please call our 90 day software support help line on 0370 6000 060. We also offer a chargeable in-store health-check designed to give PC's a new lease of life after you have had them awhile. Ask in-store for details.</p>
+
+	<p style="display:none" id="s9o2">Need further assistance? The Apple Support app is your personalised guide to the best options from Apple. Find answers with articles tailored to your products and questions. Call, chat or email with an expert right away, or schedule a callback when it's convenient. Get a repair at an Apple Store or a nearby Apple Authorized Service Provider.</p>
+
+	<div style="display:none" id="s9o3"></div>
+
+
+	<p>Should you require assistance not covered above, please call our technical support help line on 0330 123 0106. <br>You can also visit productsupport.johnlewis.com to get personalised online technical support for your devices.</p>
+
+
+
+
+
+	<p>Regards,</br></br>Technical Services</p>
+</div>
+
+
+<!--This form has been created by Alison Daines - Cribbs Causeway. It is not official in any way and is a work in progress.-->
+
+</div></body>
+</html>
