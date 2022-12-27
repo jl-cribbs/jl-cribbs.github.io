@@ -509,13 +509,13 @@ function dirty(ev) {
 			<td width="55%">
 				<p id="s1"><select class="new" id="service" onChange="switching('service')">
 					<option selected>[-- SELECT SERVICE --]</option>
-					<option value="1">STANDARD COMPUTER SET UP - WINDOWS</option>
-					<option value="3">ADVANCED COMPUTER SET UP - WINDOWS</option>
-					<option value="5">IPAD SET UP</option>
-					<option value="6">ANDROID TABLET SET UP</option>
-					<option value="17">AMAZON TABLET / EREADER SET UP</option>
+					<option value="1">STANDARD COMPUTER SET UP</option>
+					<option value="3">ADVANCED COMPUTER SET UP </option>
+					<option value="4">IPAD SET UP</option>
 					<option value="7">IPHONE SET UP</option>
 					<option value="8">ANDROID PHONE SET UP</option>
+					<option value="6">ANDROID TABLET SET UP</option>
+					<option value="17">AMAZON TABLET / EREADER SET UP</option>
 					<option value="14">SOFTWARE INSTALLATION ONLY</option>
 					<option disabled></option>
 					<option value="10">HEALTH CHECK AND FIX</option>
@@ -890,13 +890,12 @@ function dirty(ev) {
 					</tr>
 		</table>
 
-		</div>
+	</div>
 
 		
 
 
-
-
+</div>
 
 
 
@@ -907,7 +906,7 @@ function dirty(ev) {
 <!-- SECTION 5 -->
 <!-- Ipad Tablet Set Up Section -->
 
-<div style="display:none" id="service5">
+<div style="display:none" id="service4">
 		<table cellspacing="0" cellpadding="0">
 			<tr>
 				<th colspan="4">IPAD SET UP</th>
@@ -961,53 +960,7 @@ function dirty(ev) {
 									<input tip="Remember to type it exactly as the customer says, using upper and lower case letters. Read it back to customer to confirm." maxlength="40">
 								</td>
 							</tr>
-							<tr>
-								<td>RECOVERY EMAIL</td>
-								<td class="small" colspan="3"><input tip="Used for password recovery. Required when setting up a new Apple account." maxlength="40"></td>
-							</tr>
-							<tr>
-								<td rowspan="3">SECURITY QUESTIONS</td>
-								<td colspan="4">
-									<select onChange="done(this)">
-									<option>-- Select Question --</option>
-									<option>What is the first name of your best friend in high school?</option>
-									<option>What was the name of your first pet?</option>
-									<option>What was the first thing you learned to cook?</option>
-									<option>What was the first film you saw in the theater?</option>
-									<option>Where did you go the first time you flew on a plane?</option>
-									<option>What is the last name of your favorite elementary school teacher?</option>
-									</select>
-									<input tip="Type answer exactly how customer wishes it to be set up with Apple." maxlength="25">
-								</td>
-							</tr>
-							<tr>
-								<td colspan="4">
-									<select onChange="done(this)">
-									<option>-- Select Question --</option>
-									<option>What is your dream job?</option>
-									<option>What is your favorite children's book?</option>
-									<option>What was the model of your first car?</option>
-									<option>What was your childhood nickname?</option>
-									<option>Who was your favorite film star or character in high school?</option>
-									<option>Who was your favorite singer or band in high school?</option>
-									</select>
-									<input tip="Type answer exactly how customer wishes it to be set up with Apple." maxlength="25">
-								</td>
-							</tr>
-							<tr>
-								<td colspan="4">
-									<select onChange="done(this)">
-									<option>-- Select Question --</option>
-									<option>In what city did your parents first meet?</option>
-									<option>What was the name of your first boss?</option>
-									<option>What is the name of the street where you grew up?</option>
-									<option>What is the name of the first beach you visited?</option>
-									<option>What was the first album that you purchased?</option>
-									<option>What is the name of you favorite sports team?</option>
-									</select>
-									<input tip="Type answer exactly how customer wishes it to be set up with Apple." maxlength="25">
-								</td>
-							</tr>
+							
 						</table>
 					</div>
 
@@ -1082,152 +1035,34 @@ function dirty(ev) {
 		</table>
 
 		<div class="avoidbreak">
-			<table cellspacing="0" cellpadding="0">
-			<tr>
-				<th colspan="4">ACTIONS TAKEN BY JOHN LEWIS & PARTNERS PARTNER</th>
-			</tr>
-			<tr>
-				<td width="10%">PARTNER</td>
-				<td width="40%"></td>
-				<td width="25%">CR/STOCK NO./JOB NO.</td>
-				<td width="25%"><dupe dupe="refno"></td>
-			</tr>
-			<tr>
-				<td>NAME</td>
-				<td><dupe dupe="title"></dupe>
-					<dupe dupe="forename"></dupe>
-					<dupe dupe="surname"></dupe>
-				</td>
-				<td>CURRENT DATE</td>
-				<td><input date="true" maxlength="30"></td>
-			</tr>
-		</table>
 
-		<table cellspacing="0" cellpadding="0">
-			<tr>
-				<th>TABLET SET UP - IPAD</th>
-				<th>COMMENTS</th>
-				<th>&#x2713; DONE</th>
-			</tr>
-			<tr>
-				<td class="small">Unpack  and check contents.</td>
-				<td width="40%">&nbsp;</td>
-				<td width="10%">&nbsp;</td>
-			</tr>
-			<tr>
-				<td class="small">Set  language, country or region.</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td class="small">Connect to wifi.</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td class="small">Enable location services (yes/no).</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td class="small">Set up as new iPad or restore from existing Apple id / backup.</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td class="small">Create new Apple id or use existing - sign in.</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td class="small">Agree terms and conditions.</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td class="small">Use iCloud (yes), backup to iCloud (yes), find my iPad (yes/no).</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td class="small">Set up passcode (yes/no).</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td class="small">Use siri (yes), keychain (no).</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td class="small">Send diagnostics to Apple (no).</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td class="small">Install Apple Support app.</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td class="small">Install any available operating system / app updates.</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td class="small">Ensure iPad has reasonable charge.</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td class="small">Repack contents. Place in case (yes/no).</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td class="small">Contact customer if no agreed eta.</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-			</tr>
-			<tr>
-				<td class="small">Give handover to customer, making sure any relevant info / passwords are understood.</td>
-				<td>&nbsp;</td>
-				<td>&nbsp;</td>
-			</tr>
-		</table>
-		<hr class="slip" align="centre">
-		<centre><p>To be retained in branch for 6 months</p></centre>
-		<table>
-			<tr>
-				<th colspan="5">COMPLETION OF SERVICE</th>
-			</tr>
-			<tr>
-				<td colspan="5">John Lewis & Partners does not retain any of the information or paperwork used to complete this service. Where possible, this has been returned to you. If you feel we have completed the service to your satisfaction, please sign and date below.</td>
-			</tr>
-			<tr>
-				<td>Service</td>
-				<td width="40%"><br><br></td>
-				<td>Branch</td>
-				<td width="40%"><br><br></td>
-			</tr>
-			<tr>
-				<td>Customer name</td>
-				<td><dupe dupe="title"></dupe>
-						<dupe dupe="forename"></dupe>
-						<dupe dupe="surname"></dupe>
-				</td>
-				<td>Ref No.</td>
-				<td><dupe dupe="refno"></td>
-			</tr>
-			<tr>
-				<td>Customer signature</td>
-				<td width="40%"><br><br></td>
-				<td>Date</td>
-				<td width="40%"><br><br></td>
-			</tr>
-		</table>
-		<hr align="centre">
-	</div>
+			<table cellspacing="0" cellpadding="0">
+						<tr>
+							<th colspan="4">ACTIONS TAKEN BY JOHN LEWIS & PARTNERS PARTNER</th>
+						</tr>
+						<tr>
+							<td colspan="4">John Lewis & Partners does not retain any of the information or paperwork used to complete this service. Where possible, this has been returned to you. If have any further queries speak to a partner who will be able to assist you.</td>
+						</tr>
+						<tr>
+							<td width="10%">PARTNER</td>
+							<td width="40%"></td>
+							<td width="25%">CR/STOCK NO./JOB NO.</td>
+							<td width="25%"><dupe dupe="refno"></td>
+						</tr>
+						<tr>
+							<td>NAME</td>
+							<td><dupe dupe="title"></dupe>
+								<dupe dupe="forename"></dupe>
+								<dupe dupe="surname"></dupe>
+							</td>
+							<td>CURRENT DATE</td>
+							<td><input date="true" maxlength="30"></td>
+						</tr>
+			</table>
+	
+			</div>
+	
+
 </div>
 <!-- End of iPad Tablet Section -->
 
