@@ -2,10 +2,11 @@
 <head>
 
 <style>
-{
-	font-family:	Arial;
-	font-size:		16pt;
-	}
+	@font-face {
+    	font-family: 'Gill Sans';
+    	src: url('GillSansforJL-Regular.ttf'), local('GillSansforJL-Regular.ttf');
+        font-size:		16pt;
+    }
 INPUT {
 	border:			0px;
 	background-color:	#eef;
@@ -38,6 +39,9 @@ IMG.inline {
 .avoidbreak {
 	page-break-inside:	avoid;
 	}
+textarea {
+ 	font-size:16px
+    	}
 </style>
 
 <script type="text/javascript">
@@ -58,7 +62,8 @@ var TODAY = d.getDate() + " " + monthname[d.getMonth()] + ", " + d.getFullYear()
 </head>
 <body>
 
-<div style="width:827px;height:1169px">
+<div style= "font-family: Gill Sans";> 
+<div style= "width:827px;height:1169px";>
 
 <img style="overflow:hidden;position:absolute;bottom:0px;right:0px;width:15%" src="bottomlogo.png">
 
@@ -348,8 +353,9 @@ var TODAY = d.getDate() + " " + monthname[d.getMonth()] + ", " + d.getFullYear()
 	<option value="s12o2">-None required-</option>
 
 </select></p>
-	<p style="display:none" id="s12o1"><textarea></textarea></p>
+	<p style="display:none" id="s12o1"><textarea style="font-family: Gill Sans"></textarea></p>
 	<div style="display:none" id="s12o2"></div>
+
 
 <p id="s6"><select onChange="reveal('s6',this)">
 	<option selected>[-- Select Office Install --]</option>
@@ -379,13 +385,16 @@ var TODAY = d.getDate() + " " + monthname[d.getMonth()] + ", " + d.getFullYear()
 
 <p id="s7"><select onChange="reveal('s7',this)">
 	<option selected>[-- Select Antivirus --]</option>
-	<option value="s7o2">Norton (full version)</option>
+	<option value="s7o2">Norton (Full version)</option>
 	<option value="s7o5">Windows Defender</option>
+	<option value="s7o7">McAfee (1 Year Subscription)</option>
 	<option value="s7o6">-None- i.e. Tablet or Mac and not required</option>
 
 </select></p>
 
 <p style="display:none" id="s7o2"><table><tr><td colspan="4">We have installed and activated the full version of Norton's antivirus for you and created a Norton's account. It has been updated with the latest virus definitions. You have a one year subscription from this date.</td></tr><tr><td>Account: <input maxlength="40" size="40" title="Account email address"></td><td>Password: <input maxlength="30" title="Make sure you type this correctly using upper and lower case letters"></td></tr></table></p>
+
+<p style="display:none" id="s7o7"><table><tr><td colspan="4">We have installed and activated the full version of McAfee antivirus for you and created a McAfee account. It has been updated with the latest virus definitions. You have a one year subscription from this date.</td></tr><tr><td>Account: <input maxlength="40" size="40" title="Account email address"></td><td>Password: <input maxlength="30" title="Make sure you type this correctly using upper and lower case letters"></td></tr></table></p>
 
 <p style="display:none" id="s7o4"><table><tr><td colspan="4">We have activated, installed and updated the retail version of McAfee antivirus. You will be prompted to resubscribe in a years time.</td></tr><tr><td>Account: <input maxlength="40" size="40" title="Account email address"></td><td>Password: <input maxlength="30" title="Make sure you type this correctly using upper and lower case letters"></td></tr></table></p>
 
