@@ -1,6 +1,6 @@
 <html>           
-<!--This form has been created by Alison Daines - John Lewis Cribbs Causeway. alison.daines@johnlewis.co.uk-->   
-<!--Please also look at the Google+ collection showing my progress writing a complete Google App solution for JL AVS "https://plus.Google.com/u/1/collection/QhkusB" -->    
+<!--This form was originally created by Alison Daines - John Lewis Cribbs Causeway. alison.daines@johnlewis.co.uk-->   
+<!--This form was further added to and amended significantly by Liam FitzPatrick - Assistant Trading Manager for Tech Services -->    
 <head>  
 <meta charset="UTF-8">     
 <style>    
@@ -17,9 +17,9 @@ H1	{
 	text-align:			center;
 	}
 .screeninfo {
-	background-color:	#aed6f1;
+	background-color:	#003936;
 	width:				calc(800px-40px);
-	border:				2px solid #3498db;
+	border:				2px solid #003936;
 	border-radius:		10px;
 	padding:			10px;
 	margin-bottom:		10px;
@@ -70,7 +70,7 @@ INPUT, TEXTAREA, SELECT {
 	width:				100%;
 	}
 SELECT, INPUT {
-	background-color:	#aed6f1;
+	background-color:	#b7e0cb;
 	transition:	background-color 0.25s linear;
 	}
 INPUT[readonly] {
@@ -431,7 +431,7 @@ function dirty(ev) {
 <body onLoad="setup()">
 <div id="pophelp">BLAH BLAH</div>
 <center><div id="capsule">
-<center><div class="screeninfo">Fill in coloured areas and check with Tech Services on current service completion times. V.7.3</div></center>
+<center><div class="screeninfo"><font color="f1b472">Fill in coloured areas and check with Tech Services on current service completion times. V.7.3</div></center>
 
 <div id="header">
 	<p><center><img width="800" src="avstitle.png"></center><div id="datecaption" style="margin-top:-0.75em;text-align:right"></div></p>
@@ -497,6 +497,7 @@ function dirty(ev) {
 					<option selected>[-- SELECT SERVICE --]</option>
 					<option value="1">STANDARD COMPUTER SET UP - WINDOWS</option>
 					<option value="2">STANDARD COMPUTER SET UP - APPLE</option>
+                                        <option value="22">STANDARD COMPUTER SET UP - CHROME</option>
 					<option value="3">ADVANCED COMPUTER SET UP - WINDOWS</option>
 					<option value="4">ADVANCED COMPUTER SET UP - APPLE</option>
 					<option value="5">IPAD SET UP</option>
@@ -811,7 +812,7 @@ function dirty(ev) {
 
 
 		<hr class="slip" align="centre">
-		<centre><p>Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
+		<centre><p><font color="#000000">Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
 		<table>
 
 				<tr>
@@ -1214,7 +1215,7 @@ function dirty(ev) {
 		    </tr>
 		</table>
 		<hr class="slip" align="centre">
-		<centre><p>Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
+		<centre><p><font color="#000000">Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
 		<table>
 			<tr>
 				<th colspan="5">COMPLETION OF SERVICE</th>
@@ -1250,6 +1251,247 @@ function dirty(ev) {
 
 
 
+
+<!-- ################################################################################## -->
+<!-- ################################################################################## -->
+<!-- ################################################################################## -->
+<!-- SECTION 22 -->
+<!-- Standard PC Set Up - Chrome -->
+
+
+<div style="display:none" id="service22">
+	<div>
+		<table cellspacing="0" cellpadding="0">
+			<tr>
+				<th colspan="5">STANDARD COMPUTER SETUP - CHROME</th>
+			</tr>
+			<tr>
+				<td width="15%"><img width="100%" src="barcode - tablet.png"><br>&pound;30 87540110</td>
+				<td colspan="2" width="60%"><strong class="small">Set up user account(s). Prepare Laptop or desktop for first use. Installation of any manufacturer updates or operating system updates available. Configure or create email address (if available). Set up inbuilt Parental Controls (if required). Brief explanation of how to use the device and download apps.</td>
+				<td class="small">SERVICE PAID FOR?</td>
+				<td width="15%"><select onChange="done(this)">
+					<option selected>--SELECT--</option>
+					<option>YES AT TILL</option>
+					<option>YES IN TS</option>
+					<option>NO, PAY LATER</option>
+					<option>ALLOWANCE</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>ADDITIONAL INFORMATION</td>
+				<td colspan="4" class="small"><textarea rows="4" tip="Any other relevant info. I.E. Unique requests by customer such as multiple users or parental controls."></textarea></td>
+			</tr>
+		</table>
+
+
+		<table cellspacing="0" cellpadding="0">
+			<tr>
+				<th colspan="4">GOOGLE ACCOUNT</th>
+			</tr>
+			<tr>
+				<td colspan="4">
+				<select id="chrome" onChange="switching('chrome')" tip="Ask if they already have an account.">
+					<option value="" selected>[-- CREATE NEW OR USE EXISTING ACCOUNT? --]</option>
+					<option value="1">CREATE NEW GOOGLE ACCOUNT</option>
+					<option value="2">USE EXISTING GOOGLE ACCOUNT</option>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<div style="display:none" id="chrome1">
+						<table>
+							<tr>
+								<td width="30%">DESIRED ACCOUNT EMAIL</td>
+								<td class="small" colspan="3">i.e John.Smith@gmail.com. The first choice may not be available. We may have to put a number on the end or swap the names around.
+								<input tip="A Google account is any 'gmail' or 'googlemail' email. The customer may already have one of these and not realise it is anything to do with Google. We can only use an existing Google account when setting up a chromebook. As a customer's first choice may not be available, discuss a couple of possible addresses with the customer, i.e. Johnsmith13@ or johnathan.smith@ and place them here." maxlength="40"></td>
+							</tr>
+							<tr>
+								<td>DESIRED ACCOUNT PASSWORD</td>
+								<td class="small" colspan="3">8 characters long and mixture of upper & lower case letters / numbers.
+									<input tip="Remember to type it exactly as the customer says, using upper and lower case letters. Read it back to customer to confirm."maxlength="40">
+								</td>
+							</tr>
+							<tr>
+								<td>RECOVERY EMAIL/MOBILE NUMBER</td>
+								<td class="small" colspan="3"><input tip="Used for password recovery." maxlength="40"></td>
+							</tr>
+							
+						</table>
+					</div>
+
+					<div style="display:none" id="chrome2">
+						<table>
+							<tr>
+								<td width="30%">EXISTING ACCOUNT EMAIL</td>
+								<td class="small" colspan="3">i.e John.Smith@gmail.com.
+									<input tip="A Google account is any 'gmail' or 'googlemail' email. The customer may already have one of these and not realise it is anything to do with Google. We can only use an existing Google account when setting up a chromebook. As a customer's first choice may not be available, discuss a couple of possible addresses with the customer, i.e. Johnsmith13@ or johnathan.smith@ and place them here." maxlength="40"></td>
+							</tr>
+							<tr>
+								<td>EXISTING ACCOUNT PASSWORD</td>
+								<td class="small" colspan="3">Confirm the account email and password are correct by signing in at '<a href="http://mail.google.com" target="_blank">MAIL.GOOGLE.COM</a>'.
+								<input tip="Remember to type it exactly as the customer says, using upper and lower case letters. Read it back to customer to confirm. You can always ensure account name and password are correct by signing into Google mail at mail.google.com." maxlength="40">
+								</td>
+							</tr>
+						</table>
+					</div>
+
+
+
+
+						<table>
+							<tr><th colspan="2">(OPTIONAL) ADDITIONAL PRE-EXISTING EMAIL SET UP</th></tr>
+							<tr><td colspan="2">If the customer has another email address that they would like us to try and add, please put the details here. <br><strong>We cannot guarantee that we will be able to do this though as some types of email are more difficult than others to configure and archived emails that exist only on the customer's original machine, rather than in the cloud/web may not be transferable.</td></tr>
+
+							<tr>
+								<td width="30%">EXISTING EMAIL ADDRESS</td>
+								<td class="small" colspan="3"><input tip="If the customer is unsure of any details, it is better to leave this whole area blank." maxlength="40">
+								</td>
+							</tr>
+							<tr>
+								<td>EXISTING EMAIL PASSWORD</td>
+								<td class="small" colspan="3"><input tip="Remember to type it exactly as the customer says, using upper and lower case letters. Read it back to customer to confirm." maxlength="40">
+								</td>
+							</tr>
+						</table>
+
+
+
+					<div style="display:none" id="login3">
+						<table style="width:100%" class="nobum">
+							<tr>
+								<td class="small" width="15%">LOGIN NAME</td>
+								<td class="small" colspan="3"><input tip="Can be anything - first name, nickname, pet etc. If left blank, log in will by default become the Microsoft account and password." maxlength="40"></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<hr class="slip" align="centre">
+	<centre><p>
+	<div class="avoidbreak">
+		<table cellspacing="0" cellpadding="0">
+					<tr>
+						<th colspan="4">ACTIONS TAKEN BY JOHN LEWIS & PARTNERS PARTNER</th>
+					</tr>
+					<tr>
+						<td width="10%">PARTNER</td>
+						<td width="40%"></td>
+						<td width="25%">CR/STOCK NO./JOB NO.</td>
+						<td width="25%"><input dupe="refno"></td>
+					</tr>
+					<tr>
+						<td>NAME</td>
+						<td><dupe dupe="title"></dupe>
+							<dupe dupe="forename"></dupe>
+							<dupe dupe="surname"></dupe>
+						</td>
+						<td>CURRENT DATE</td>
+						<td><input date="true" maxlength="40"></td>
+					</tr>
+		</table>
+
+		<table cellspacing="0" cellpadding="0">
+			<tr>
+				<th>STANDARD COMPUTER SET UP - CHROME</th>
+				<th>COMMENTS</th>
+				<th>&#x2713; DONE</th>
+			</tr>
+			<tr>
+				<td class="small">Unpack and check contents of new machine. Boot unit.</td>
+				<td width="40%">&nbsp;</td>
+				<td width="10%">&nbsp;</td>
+		    </tr>
+			<tr>
+				<td class="small">Connect to internet.</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+		    </tr>
+			<tr>
+				<td class="small">Set  language, agree terms, register.</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+		    </tr>
+			<tr>
+				<td class="small">Create Google account or use existing Google account.</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+		    </tr>
+			<tr>
+				<td class="small">Ensure time and date are correct using internet time.</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+		    </tr>
+			<tr>
+				<td class="small">Download and install updates.</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+		    </tr>
+			<tr>
+				<td class="small">Create additional users (if required).</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+		    </tr>
+			<tr>
+				<td class="small">Set parental controls (if required).</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+		    </tr>
+			<tr>
+				<td class="small">Repack contents.</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+		    </tr>
+			<tr>
+				<td class="small">Contact customer if no agreed eta.</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+		    </tr>
+			<tr>
+				<td class="small">Handover to customer, explaining what has been done.</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+		    </tr>
+		</table>
+
+
+		<hr class="slip" align="centre">
+		<centre><p>To be retained in branch for 6 months</p></centre>
+		<table>
+
+				<tr>
+					<th colspan="5">COMPLETION OF SERVICE</th>
+				</tr>
+				<tr>
+					<td colspan="5">John Lewis & Partners does not retain any of the information or paperwork used to complete this service. Where possible, this has been returned to you. If you feel we have completed the service to your satisfaction, please sign and date below.</td>
+				</tr>
+				<tr>
+				 	<td>Service</td>
+					<td width="40%"><br><br></td>
+					<td>Branch</td>
+					<td width="40%"><br><br></td>
+				</tr>
+				<tr>
+					<td>Customer name</td>
+					<td><dupe dupe="title"></dupe>
+							<dupe dupe="forename"></dupe>
+							<dupe dupe="surname"></dupe>
+					</td>
+					<td>Ref No.</td>
+					<td><dupe dupe="refno"></td>
+				</tr>
+				<tr>
+					<td>Customer signature</td>
+					<td width="40%"><br><br></td>
+					<td>Date</td>
+					<td width="40%"><br><br></td>
+				</tr>
+		</table>
+		<hr align="centre">
+	</div>
+</div>
 
 
 
@@ -1561,7 +1803,7 @@ function dirty(ev) {
 			</tr>
 		</table>
 		<hr class="slip" align="centre">
-		<centre><p>Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
+		<centre><p><font color="#000000">Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
 		<table>
 
 				<tr>
@@ -1998,7 +2240,7 @@ function dirty(ev) {
 		    </tr>
 		</table>
 		<hr class="slip" align="centre">
-		<centre><p>Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
+		<centre><p><font color="#000000">Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
 		<table>
 
 				<tr>
@@ -2341,7 +2583,7 @@ function dirty(ev) {
 			</tr>
 		</table>
 		<hr class="slip" align="centre">
-		<centre><p>Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
+		<centre><p><font color="#000000">Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
 		<table>
 			<tr>
 				<th colspan="5">COMPLETION OF SERVICE</th>
@@ -2488,6 +2730,21 @@ function dirty(ev) {
 				</td>
 			</tr>
 		</table>
+                <table>
+			<tr><th colspan="2">(OPTIONAL) ADDITIONAL MANUFACTURER ACCOUNT SET UP</th></tr>
+			<tr><td colspan="2">If the customer has an account with the manufactuer that they would like us to try and add, please put the details here. <br><strong>Adding the manufacturers account can help to ensure all required data is transferred between devices.</td></tr>
+			<tr>
+				<td width="30%">MANUFACTURER ACCOUNT EMAIL ADDRESS</td>
+				<td class="small" colspan="3"><input tip="If the customer is unsure of any details, it is better to leave this whole area blank." maxlength="40">
+				</td>
+			</tr>
+			<tr>
+				<td>MANUFACTURER ACCOUNT PASSWORD</td>
+				<td class="small" colspan="3"><input tip="Remember to type it exactly as the customer says, using upper and lower case letters. Read it back to the customer to confirm." maxlength="40">
+				</td>
+			</tr>
+		</table>
+		<table>
 		<table>
 			<tr><th colspan="2">(OPTIONAL) ADDITIONAL PRE-EXISTING EMAIL SET UP</th></tr>
 			<tr><td colspan="2">If the customer has another email address that they would like us to try and add, please put the details here. <br><strong>We cannot guarantee that we will be able to do this though as some types of email are more difficult than others to configure and archived emails that exist only on the customer's original machine, rather than in the cloud/web may not be transferable.</td></tr>
@@ -2613,7 +2870,7 @@ function dirty(ev) {
 				</tr>
 			</table>
 			<hr class="slip" align="centre">
-			<centre><p>Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
+			<centre><p><font color="#000000">Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
 			<table>
 				<tr>
 					<th colspan="5">COMPLETION OF SERVICE</th>
@@ -2693,7 +2950,7 @@ function dirty(ev) {
 			</tr>
 			<tr>
 				<td colspan="4">
-					<select id="AppleiPhoneacc" onChange="switching('AppleiPhoneacc')" tip="Ask if they already have an account.">
+					<select id="AppleiPhone" onChange="switching('AppleiPhone')" tip="Ask if they already have an account.">
 						<option value="" selected>[-- SELECT NEW OR EXISTING ACCOUNT --]</option>
 						<option value="1">CREATE NEW APPLE ACCOUNT</option>
 						<option value="2">USE EXISTING APPLE ACCOUNT</option>
@@ -2702,7 +2959,7 @@ function dirty(ev) {
 			</tr>
 			<tr>
 				<td colspan="4">
-					<div style="display:none" id="AppleiPhoneacc1">
+					<div style="display:none" id="AppleiPhone1">
 						<table class="nobum">
 							<tr>
 								<td width="30%">DESIRED ACCOUNT EMAIL</td>
@@ -2765,7 +3022,7 @@ function dirty(ev) {
 						</table>
 					</div>
 
-					<div style="display:none" id="AppleiPhoneacc2">
+					<div style="display:none" id="AppleiPhone2">
 						<table class="nobum">
 							<tr>
 								<td width="30%">EXISTING ACCOUNT EMAIL</td>
@@ -2954,7 +3211,7 @@ function dirty(ev) {
 				</tr>
 			</table>
 			<hr class="slip" align="centre">
-			<centre><p>Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
+			<centre><p><font color="#000000">Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
 			<table>
 				<tr>
 					<th colspan="5">COMPLETION OF SERVICE</th>
@@ -3109,6 +3366,20 @@ function dirty(ev) {
 				</td>
 			</tr>
 		</table>
+                <table>
+			<tr><th colspan="2">(OPTIONAL) ADDITIONAL MANUFACTURER ACCOUNT SET UP</th></tr>
+			<tr><td colspan="2">If the customer has an account with the manufactuer that they would like us to try and add, please put the details here. <br><strong>Adding the manufacturers account can help to ensure all required data is transferred between devices.</td></tr>
+			<tr>
+				<td width="30%">MANUFACTURER ACCOUNT EMAIL ADDRESS</td>
+				<td class="small" colspan="3"><input tip="If the customer is unsure of any details, it is better to leave this whole area blank." maxlength="40">
+				</td>
+			</tr>
+			<tr>
+				<td>MANUFACTURER ACCOUNT PASSWORD</td>
+				<td class="small" colspan="3"><input tip="Remember to type it exactly as the customer says, using upper and lower case letters. Read it back to the customer to confirm." maxlength="40">
+				</td>
+			</tr>
+		</table>
 		<table>
 			<tr><th colspan="2">(OPTIONAL) ADDITIONAL PRE-EXISTING EMAIL SET UP</th></tr>
 			<tr><td colspan="2">If the customer has another email address that they would like us to try and add, please put the details here. <br><strong>We cannot guarantee that we will be able to do this though as some types of email are more difficult than others to configure and archived emails that exist only on the customer's original machine, rather than in the cloud/web may not be transferable.</td></tr>
@@ -3238,7 +3509,7 @@ function dirty(ev) {
 				</tr>
 			</table>
 			<hr class="slip" align="centre">
-			<centre><p>Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
+			<centre><p><font color="#000000">Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
 			<table>
 				<tr>
 					<th colspan="5">COMPLETION OF SERVICE</th>
@@ -3328,7 +3599,7 @@ function dirty(ev) {
 			</tr>
 			<tr>
 
-				<td colspan="4"><select id="Googlephone" onChange="switching('Googlephone')" tip="Ask if they already have a Google account.">
+				<td colspan="4"><select id="AndroidWatch" onChange="switching('AndroidWatch')" tip="Ask if they already have a Google account.">
 					<option value="" selected>[-- CREATE NEW ACCOUNT OR USE EXISTING? --]</option>
 					<option value="1">CREATE NEW GOOGLE ACCOUNT</option>
 					<option value="2">USE EXISTING GOOGLE ACCOUNT</option>
@@ -3336,7 +3607,7 @@ function dirty(ev) {
 			</tr>
 			<tr>
 				<td colspan="4">
-					<div style="display:none" id="Googlephone1">
+					<div style="display:none" id="AndroidWatch1">
 						<table class="nobum">
 							<tr>
 								<td width="25%">DESIRED ACCOUNT</td>
@@ -3370,7 +3641,7 @@ function dirty(ev) {
 						</table>
 					</div>
 
-					<div style="display:none" id="Googlephone2">
+					<div style="display:none" id="AndroidWatch2">
 						<table class="nobum">
 							<tr>
 								<td width="25%">EXISTING ACCOUNT</td>
@@ -3513,7 +3784,7 @@ function dirty(ev) {
 				</tr>
 			</table>
 			<hr class="slip" align="centre">
-			<centre><p>Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
+			<centre><p><font color="#000000">Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
 			<table>
 				<tr>
 					<th colspan="5">COMPLETION OF SERVICE</th>
@@ -3593,16 +3864,16 @@ function dirty(ev) {
 			</tr>
 			<tr>
 				<td colspan="4">
-					<select id="AppleiPhoneacc" onChange="switching('AppleiPhoneacc')" tip="Ask if they already have an account.">
-						<option value="" selected>[-- SELECT NEW OR EXISTING ACCOUNT --]</option>
-						<option value="1">CREATE NEW APPLE ACCOUNT</option>
-						<option value="2">USE EXISTING APPLE ACCOUNT</option>
-					</select>
+				        <select id="AppleWatch" onChange="switching('AppleWatch')" tip="Ask if they already have an account.">
+					        <option value="" selected>[-- SELECT NEW OR EXISTING ACCOUNT --]</option>
+					        <option value="1">CREATE NEW APPLE ACCOUNT</option>
+					        <option value="2">USE EXISTING APPLE ACCOUNT</option>
+				        </select>
 				</td>
 			</tr>
 			<tr>
 				<td colspan="4">
-					<div style="display:none" id="AppleiPhoneacc1">
+					<div style="display:none" id="AppleWatch1">
 						<table class="nobum">
 							<tr>
 								<td width="30%">DESIRED ACCOUNT EMAIL</td>
@@ -3665,7 +3936,7 @@ function dirty(ev) {
 						</table>
 					</div>
 
-					<div style="display:none" id="AppleiPhoneacc2">
+					<div style="display:none" id="AppleWatch2">
 						<table class="nobum">
 							<tr>
 								<td width="30%">EXISTING ACCOUNT EMAIL</td>
@@ -3854,7 +4125,7 @@ function dirty(ev) {
 				</tr>
 			</table>
 			<hr class="slip" align="centre">
-			<centre><p>Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
+			<centre><p><font color="#000000">Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
 			<table>
 				<tr>
 					<th colspan="5">COMPLETION OF SERVICE</th>
@@ -3942,7 +4213,7 @@ function dirty(ev) {
 			</tr>
 			<tr>
 				<td colspan="4">
-					<select id="AppleiPhoneacc" onChange="switching('AppleiPhoneacc')" tip="Ask if they already have an account.">
+					<select id="FitbitWatch" onChange="switching('FitbitWatch')" tip="Ask if they already have an account.">
 						<option value="" selected>[-- SELECT NEW OR EXISTING ACCOUNT --]</option>
 						<option value="1">CREATE NEW FITBIT ACCOUNT</option>
 						<option value="2">USE EXISTING FITBIT ACCOUNT</option>
@@ -3951,7 +4222,7 @@ function dirty(ev) {
 			</tr>
 			<tr>
 				<td colspan="4">
-					<div style="display:none" id="AppleiPhoneacc1">
+					<div style="display:none" id="FitbitWatch1">
 						<table class="nobum">
 							<tr>
 								<td width="30%">DESIRED ACCOUNT EMAIL</td>
@@ -4014,7 +4285,7 @@ function dirty(ev) {
 						</table>
 					</div>
 
-					<div style="display:none" id="AppleiPhoneacc2">
+					<div style="display:none" id="FitbitWatch2">
 						<table class="nobum">
 							<tr>
 								<td width="30%">EXISTING ACCOUNT EMAIL</td>
@@ -4024,7 +4295,7 @@ function dirty(ev) {
 							</tr>
 							<tr>
 								<td>EXISTING PASSWORD</td>
-								<td class="small" colspan="3">Confirm the account email and password are correct by signing in at <a href="https://Appleid.Apple.com" target="_blank">'APPLEID.APPLE.COM'.</a>
+								<td class="small" colspan="3">Confirm the account email and password are correct by signing in at <a href="https://accounts.fitbit.com/" target="_blank">'accounts.fitbit.com'.</a>
 								<input tip="Remember to type it exactly as the customer says, using upper and lower case letters. Read it back to the customer and confirm. If in any doubt you can test by signing in at 'https://Appleid.Apple.com'." maxlength="45">
 								</td>
 							</tr>
@@ -4041,20 +4312,7 @@ function dirty(ev) {
 				</td>
 			</tr>
 		</table>
-		<table>
-			<tr><th colspan="2">FITBIT ACCOUNT DETAILS</th></tr>
-			<tr><td colspan="2"><strong>Please verify these details are correct.</td></tr>
-			<tr>
-				<td width="30%">NEW / EXISTING EMAIL ADDRESS</td>
-				<td class="small" colspan="3"><input tip="If the customer is unsure of any details, it is better to leave this whole area blank." maxlength="40">
-				</td>
-			</tr>
-			<tr>
-				<td>NEW / EXISTING PASSWORD</td>
-				<td class="small" colspan="3"><input tip="Remember to type it exactly as the customer says, using upper and lower case letters. Read it back to the customer to confirm." maxlength="40">
-				</td>
-			</tr>
-		</table>
+		
 
 		<!--********************************************************************************-->
 
@@ -4063,17 +4321,7 @@ function dirty(ev) {
 
 			<!--#######################################################################-->
 
-			<tr>
-				<td colspan="4">
-					<select id="AppleiPhoneacc" onChange="switching('AppleiPhoneacc')" tip="Ask if they already have an account.">
-						<option value="" selected>[-- SELECT NEW OR EXISTING APPLE ACCOUNT --]</option>
-						<option value="1">CREATE NEW APPLE ACCOUNT</option>
-						<option value="2">USE EXISTING APPLE ACCOUNT</option>
-					</select>
-				</td>
-			</tr>
-
-			<!--#######################################################################-->
+	
 
 
 			<tr><td colspan="2"><strong>Please use this option if the Fitbit is being setup with an Apple device. Please also verify the Apple login details are correct.</td></tr>
@@ -4209,7 +4457,7 @@ function dirty(ev) {
 				</tr>
 			</table>
 			<hr class="slip" align="centre">
-			<centre><p>Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
+			<centre><p><font color="#000000">Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
 			<table>
 				<tr>
 					<th colspan="5">COMPLETION OF SERVICE</th>
@@ -4293,7 +4541,7 @@ function dirty(ev) {
 		</tr>
 	</table>
 	<hr class="slip" align="centre">
-	<centre><p>Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
+	<centre><p><font color="#000000">Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
 	<table>
 
 			<tr>
@@ -4359,7 +4607,7 @@ function dirty(ev) {
 		</tr>
 	</table>
 	<hr class="slip" align="centre">
-	<centre><p>Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
+	<centre><p><font color="#000000">Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
 	<table>
 
 			<tr>
@@ -4424,7 +4672,7 @@ function dirty(ev) {
 		</tr>
 	</table>
 	<hr class="slip" align="centre">
-	<centre><p>Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
+	<centre><p><font color="#000000">Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
 	<table>
 
 			<tr>
@@ -4488,7 +4736,7 @@ function dirty(ev) {
 		</tr>
 	</table>
 	<hr class="slip" align="centre">
-	<centre><p>Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
+	<centre><p><font color="#000000">Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
 	<table>
 
 			<tr>
@@ -4840,7 +5088,7 @@ function dirty(ev) {
 				</tr>
 			</table>
 			<hr class="slip" align="centre">
-			<centre><p>Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
+			<centre><p><font color="#000000">Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
 			<table>
 
 				<tr>
@@ -4923,7 +5171,7 @@ function dirty(ev) {
 		</tr>
 	</table>
 	<hr class="slip" align="centre">
-	<centre><p>Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
+	<centre><p><font color="#000000">Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
 	<table>
 
 			<tr>
@@ -5038,8 +5286,8 @@ function dirty(ev) {
 </center><!-- OUTER CAPSULE -->
 
 <!--This form has been created by Alison Daines - John Lewis Cribbs Causeway.-->
-<!--Please visit "https://sites.Google.com/a/johnlewis.co.uk/set-up-services/" for the most up to date version -->
-<!--Please also look at the Google+ collection showing my progress writing a complete Google App solution for JL AVS "https://plus.Google.com/u/1/collection/QhkusB" -->
+<!--This form was further added to and amended significantly by Liam FitzPatrick - Assistant Trading Manager for Tech Services -->
+<!--Please see the "Booking in and completing an added value service" BOP on the Retaai -->
 
 </body>
 </html>
