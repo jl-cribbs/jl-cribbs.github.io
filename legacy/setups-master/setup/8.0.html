@@ -1,6 +1,6 @@
 <html>           
-<!--This form was originally created by Alison Daines - John Lewis Cribbs Causeway. alison.daines@johnlewis.co.uk-->   
-<!--This form was further added to and amended significantly by Liam FitzPatrick - Assistant Trading Manager for Tech Services -->    
+<!--This form was originally created by Alison Daines - John Lewis Cribbs Causeway. alison.daines@johnlewis.co.uk (No longer with the Partnership)-->   
+<!--This form was further added to and amended significantly by Liam FitzPatrick - Assistant Trading Manager for Tech Services (2023+) -->    
 <head>  
 <meta charset="UTF-8">     
 <style>    
@@ -498,16 +498,25 @@ function dirty(ev) {
 					<option value="1">STANDARD COMPUTER SET UP - WINDOWS</option>
 					<option value="2">STANDARD COMPUTER SET UP - APPLE</option>
                                         <option value="22">STANDARD COMPUTER SET UP - CHROME</option>
+					<option disabled></option>
+
 					<option value="3">ADVANCED COMPUTER SET UP - WINDOWS</option>
 					<option value="4">ADVANCED COMPUTER SET UP - APPLE</option>
+					<option disabled></option>
+
 					<option value="5">IPAD SET UP</option>
 					<option value="6">ANDROID TABLET SET UP</option>
 					<option value="17">AMAZON TABLET / EREADER SET UP</option>
+					<option disabled></option>
+
 					<option value="7">IPHONE SET UP</option>
 					<option value="8">ANDROID PHONE SET UP</option>
+					<option disabled></option>
+
 					<option value="9">WEARABLE TECH - ANDROID</option>
 					<option value="10">WEARABLE TECH - APPLE</option>
 					<option value="21">WEARABLE TECH - FITBIT</option>
+					<option disabled></option>
 
 					<option value="14">SOFTWARE INSTALLATION ONLY
 					<option disabled></option>
@@ -607,24 +616,16 @@ function dirty(ev) {
 								</td>
 							</tr>
 							<tr>
+								<td>DEVICE PIN</td>
+								<td class="small" colspan="3">This can be either a 4 digit number or a mix of numbers/letters / numbers.
+									<input tip="Remember to type it exactly as the customer says, using upper and lower case letters. Read it back to the customer to confirm."maxlength="40">
+								</td>
+							</tr>
+							<tr>
 								<td>RECOVERY EMAIL</td>
 								<td class="small" colspan="3"><input tip="Used for password recovery." maxlength="40"></td>
 							</tr>
-							<tr>
-								<td>SECURITY QUESTION</td>
-								<td class="small" colspan="4">Required when creating a new account.
-									<select onChange="done(this)">
-										<option>-- Select Question --</option>
-										<option>Mother's birthplace</option>
-										<option>Best childhood friend</option>
-										<option>Name of first pet</option>
-										<option>Favourite teacher</option>
-										<option>Favourite historical person</option>
-										<option>Grandfather's occupation</option>
-									</select>
-									<input tip="Type answer exactly how customer wishes it to be set up with Microsoft." maxlength="25">
-								</td>
-							</tr>
+							
 						</table>
 					</div>
 
@@ -640,6 +641,12 @@ function dirty(ev) {
 								<td>EXISTING ACCOUNT PASSWORD</td>
 								<td class="small" colspan="3">Confirm the account email and password are correct by signing in at <a href="http://mail.live.com" target="_blank">'MAIL.LIVE.COM'.</a>
 								<input tip="Remember to type it exactly as the customer says, using upper and lower case letters. Read it back to the customer to confirm. You can always ensure account name and password are correct by signing into Windows mail at mail.live.com." maxlength="40">
+								</td>
+							</tr>
+							<tr>
+								<td>DEVICE PIN</td>
+								<td class="small" colspan="3">This can be either a 4 digit number or a mix of numbers/letters / numbers.
+									<input tip="Remember to type it exactly as the customer says, using upper and lower case letters. Read it back to the customer to confirm."maxlength="40">
 								</td>
 							</tr>
 						</table>
@@ -1354,6 +1361,13 @@ function dirty(ev) {
 								</td>
 							</tr>
 						</table>
+						<table style="width:100%" class="nobum">
+							<tr>
+								<td class="small" width="15%">DESIRED DEVICE PIN (Six Digits)</td>
+								<td class="small" colspan="3"><input tip="This is an optional method of sign in which the customer may choose, this needs to be six numbers." maxlength="6"></td>
+							
+							</tr>
+						</table>
 
 
 
@@ -1579,24 +1593,16 @@ function dirty(ev) {
 								</td>
 							</tr>
 							<tr>
+								<td>DEVICE PIN</td>
+								<td class="small" colspan="3">This can be either a 4 digit number or a mix of numbers/letters / numbers.
+									<input tip="Remember to type it exactly as the customer says, using upper and lower case letters. Read it back to the customer to confirm."maxlength="40">
+								</td>
+							</tr>
+							<tr>
 								<td>RECOVERY EMAIL</td>
 								<td class="small" colspan="3"><input tip="Used for password recovery. Required when setting up a new account." maxlength="40"></td>
 							</tr>
-							<tr>
-								<td>SECURITY QUESTION</td>
-								<td class="small" colspan="4">Required when creating a new account.
-									<select onChange="done(this)">
-										<option>-- Select Question --</option>
-										<option>Mother's birthplace</option>
-										<option>Best childhood friend</option>
-										<option>Name of first pet</option>
-										<option>Favourite teacher</option>
-										<option>Favourite historical person</option>
-										<option>Grandfather's occupation</option>
-									</select>
-									<input tip="Type answer exactly how customer wishes it to be set up with Microsoft." maxlength="25">
-								</td>
-							</tr>
+							
 						</table>
 					</div>
 
@@ -1612,6 +1618,12 @@ function dirty(ev) {
 								<td>EXISTING ACCOUNT PASSWORD</td>
 								<td class="small" colspan="3">Confirm the account email and password are correct by signing in at <a href="http://mail.live.com" target="_blank">'MAIL.LIVE.COM'.</a>
 								<input tip="Remember to type it exactly as the customer says, using upper and lower case letters. Read it back to the customer to confirm. Ensure account name and password are correct by signing into Windows mail at mail.live.com."maxlength="40">
+								</td>
+							</tr>
+							<tr>
+								<td>DEVICE PIN</td>
+								<td class="small" colspan="3">This can be either a 4 digit number or a mix of numbers/letters / numbers.
+									<input tip="Remember to type it exactly as the customer says, using upper and lower case letters. Read it back to the customer to confirm."maxlength="40">
 								</td>
 							</tr>
 						</table>
@@ -2766,6 +2778,8 @@ function dirty(ev) {
 				<td class="center">
 					<input type="checkbox" tip="Would the customer like us to install the John Lewis & Partners shopping app for them?">
 				</td>
+<td class="small">USE PASSCODE (OPTIONAL)</td>
+				<td class="center"><input tip="Must be at least 4 or 6 digits" maxlength="6" size="30"></td>
 			</tr>
 		</table>
 
@@ -4589,7 +4603,7 @@ function dirty(ev) {
 			<th colspan="5"><a href="https://drive.google.com/open?id=0BwyMPGYq_QV7QTZNZ0NKZDBFUTQ" target="_blank">DATA RECOVERY (STANDARD)</a></th>
 		</tr>
 		<tr>
-			<td width="15%"><img width="100%" src="barcode - data rec std.png"><br>&pound;80 87560101</td>
+			<td width="15%"><img width="100%" src="barcode - data rec std.png"><br>&pound;149 87560101</td>
 			<td colspan="4"><strong>This service applies to harddrives that may have been accidentally erased or corrupted.<br>Examples of what qualifies for as Standard Data Recovery include; Unreadable or corrupt files, instances where the device has been accidentally formatted or had its OS re-installed, deleted files, not powering on or infection from malware/virus.<br>Any recovered data will need to be put onto an external HHD or USB (customer to purchase or provide). The faulty harddrive and backup harddrive are both sent away to the Data Recovery agent with an expected turnaround of 5-7 days.</strong></td>
 
 		</tr>
@@ -4735,6 +4749,21 @@ function dirty(ev) {
 			<td colspan="6" class="small"><textarea rows="6" tip="Any special requirements or additional information." maxlength="150"></textarea></td>
 		</tr>
 	</table>
+						<table>
+							<tr>
+								<td width="30%">ACCOUNT EMAIL</td>
+								<td class="small" colspan="3">i.e John.Smith@Outlook.com.
+									<input tip="A Microsoft account is any 'live', 'msn', 'hotmail' or 'outlook' email. The customer may already have one of these and not realise it is anything to do with Microsoft. We can only use an existing Microsoft account when setting up a pc, not another like gmail etc. Otherwise, we will always set up a new Microsoft account." maxlength="40">
+								</td>
+							</tr>
+							<tr>
+								<td>ACCOUNT PASSWORD</td>
+								<td class="small" colspan="3">Confirm the account email and password are correct by signing in to the appropriate mail site.</a>
+								<input tip="Remember to type it exactly as the customer says, using upper and lower case letters. Read it back to the customer to confirm. You can always ensure account name and password are correct by signing into Windows mail at mail.live.com." maxlength="40">
+								</td>
+							</tr>
+						</table>
+					
 	<hr class="slip" align="centre">
 	<centre><p><font color="#000000">Please ensure this form is handed to the customer or shredded once the product is handed over</p></centre>
 	<table>
@@ -5150,7 +5179,7 @@ function dirty(ev) {
 			<th colspan="5"><a href="https://drive.google.com/open?id=0BwyMPGYq_QV7QTZNZ0NKZDBFUTQ" target="_blank">DATA RECOVERY (ADVANCED)</a></th>
 		</tr>
 		<tr>
-			<td width="15%"><img width="100%" src="barcode - data rec adv.png"><br>&pound;190+ 87560102</td>
+			<td width="15%"><img width="100%" src="barcode - data rec adv.png"><br>&pound;150+ 87560102</td>
 			<td colspan="4"><strong><p>This service applies where the harddrive has sustained physical damage or developed a severe fault.<br>Depending on the nature of the fault, it may be necessary to forcibly remove the harddrive during the recovery process, resulting in further damage to the unit.</p></strong>
 			<p>Examples of this advanced service include but are not limited to the following;- Liquid damage, fire/smoke damage, clicking noises/vibration, producing a smoke/burning smell or evidence of physical trauma.</p><p>Where possible we remove the damaged harddrive in-store and then send it away to the Data Recovery agent, with an expected turnaround of 7-10 days. Data will need to be recovered onto an external HHD or USB (customer to purchase or provide).</p></td>
 		</tr>
@@ -5286,7 +5315,7 @@ function dirty(ev) {
 </center><!-- OUTER CAPSULE -->
 
 <!--This form has been created by Alison Daines - John Lewis Cribbs Causeway.-->
-<!--This form was further added to and amended significantly by Liam FitzPatrick - Assistant Trading Manager for Tech Services -->
+<!--This form was further added to and amended significantly by Liam FitzPatrick - Assistant Trading Manager for Tech Services (2023+) -->
 <!--Please see the "Booking in and completing an added value service" BOP on the Retaai -->
 
 </body>
